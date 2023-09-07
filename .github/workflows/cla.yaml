@@ -1,0 +1,24 @@
+name: "CLA Assistant"
+on:
+  workflow_call:
+    secrets:
+      PERSONAL_ACCESS_TOKEN:
+        description: "Personal access token with repo scope"
+        required: true
+jobs:
+  cla:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CLA Assistant
+        if: (github.event.comment.body == 'recheck' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request_target'
+        uses: contributor-assistant/github-action@v2.3.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_ACCESS_TOKEN : ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        with:
+          branch: 'main'
+          allowlist: 'dependabot[bot],greenkeeper[bot]'
+          path-to-signatures: 'cla/v1/signatures.json'
+          path-to-document: 'https://github.com/dash0hq/.github/blob/main/cla/v1/individual.md'
+          custom-notsigned-prcomment: '<br/><br/>Thank you for your submission - we really appreciate it ❤️. We kindly ask that $you sign a [Contributor License Agreement](https://github.com/dash0hq/.github/blob/main/cla/v1/individual.md) before we can accept your contribution.<br/><br/>You can sign the CLA by posting a pull request comment containing the same as the text below.<br/><br/>If you are contributing on behalf of a company, the company should contact us to sign a [Corporate Contributor License Agreement](https://github.com/dash0hq/.github/blob/main/cla/v1/corporate.md), via hi@dash0.com.'
+          remote-repository-name: .github
