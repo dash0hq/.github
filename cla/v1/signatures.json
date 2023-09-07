@@ -1,4 +1,20 @@
 {
   "signedContributors": [
+    {
+      "name": "bripkens",
+      "id": 596443,
+      "comment_id": 1709847732,
+      "created_at": "2023-09-07T09:46:00Z",
+      "repoId": 664563648,
+      "pullRequestNo": 45
+    },
+    {
+      "name": "bripkens",
+      "id": 596443,
+      "comment_id": 1709848789,
+      "created_at": "2023-09-07T09:46:44Z",
+      "repoId": 664563648,
+      "pullRequestNo": 45
+    }
   ]
 }
