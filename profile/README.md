@@ -6,7 +6,9 @@
 <strong align="center">This is what we want to achieve together with you.</strong>
 </div>
 
-We – that is a group of observability and monitoring experts dedicated to a single mission: **Make Observability easy for every developer**. This is why we started Dash0.
+We – that is a group of observability and monitoring experts dedicated to a single mission: **Make Observability easy for every developer**.
+
+**This is why we started Dash0.**
 
 <img width="825" alt="lettering" src="https://github.com/dash0hq/.github/assets/596443/e7ad4630-2e40-4843-a6b9-fba044749836">
 
