@@ -17,7 +17,7 @@ jobs:
           PERSONAL_ACCESS_TOKEN : ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:
           branch: 'main'
-          allowlist: 'dependabot[bot],greenkeeper[bot],snyk-bot[bot]'
+          allowlist: 'dependabot[bot],greenkeeper[bot],snyk-bot'
           path-to-signatures: 'cla/v1/signatures.json'
           path-to-document: 'https://github.com/dash0hq/.github/blob/main/cla/v1/individual.md'
           custom-notsigned-prcomment: '<br/><br/>Thank you for your submission - we really appreciate it ❤️. We kindly ask that $you sign a [Contributor License Agreement](https://github.com/dash0hq/.github/blob/main/cla/v1/individual.md) before we can accept your contribution.<br/><br/>You can sign the CLA by posting a pull request comment containing the same as the text below.<br/><br/>If you are contributing on behalf of a company, the company should contact us to sign a [Corporate Contributor License Agreement](https://github.com/dash0hq/.github/blob/main/cla/v1/corporate.md), via hi@dash0.com.'
