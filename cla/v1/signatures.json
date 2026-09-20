@@ -479,6 +479,14 @@
       "created_at": "2026-09-16T16:59:36Z",
       "repoId": 1206931856,
       "pullRequestNo": 249
+    },
+    {
+      "name": "riccardomenegazzo",
+      "id": 52837869,
+      "comment_id": 5753088079,
+      "created_at": "2026-09-20T22:20:11Z",
+      "repoId": 664563648,
+      "pullRequestNo": 720
     }
   ]
 }
